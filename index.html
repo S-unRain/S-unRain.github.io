@@ -1,54 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="css/style.css" />
-		<title></title>
+		<meta charset="UTF-8">
+		<title>Test</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.section{
+				width: 100%;
+				height: 100%;
+				padding: 30px 0px;
+			}
+			.section-top{
+				max-width: 960px;
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 30px; 
+				font-size: 1.5rem;
+			}
+			.section-bottom{
+				max-width: 960px;
+				text-align: center;
+				margin: 0 auto;
+			}
+			.sectionB{
+				background: rgb(51,51,51);
+				color: white;
+			}
+			.topVideo{
+				width: 100vw;
+				height: 100vh;
+				overflow: hidden;
+				position: relative;
+			}
+			video{
+				/*min-width: 1800px;*/
+				min-width: 100%;
+				min-height: 100%;
+			}
+			.videoBac{
+				width: 100vw;
+				height: 100vh;
+				background: rgba(34,73,96,0.8);
+				position: absolute;
+				top: 0px;
+			}
+			.topContent{
+				max-width: 960px;
+				height: 300px;
+				margin: 40vh auto;
+				text-align: center;
+			}
+			.topContent-top{
+				max-width: 960px;
+				text-align: center;
+				font-size: 1.5rem;
+				color: white;
+				margin-top: 20px;
+			}
+			h1{
+				font-size: 3.2rem;
+				max-width: 960px;
+				text-align: center;
+				color: white;
+			}
+			.btn{
+				font-size: 1.3rem;
+				color: white;
+				width:150px; 
+				text-align: center;
+				margin: 30px auto;
+				background: rgb(61,178,160);
+				padding: 15px 20px;
+				border-radius: 10px;
+			}
+			@media only screen and (max-width:700px) {
+				.topContent{
+					height: 300px;
+					margin: 60vw auto;
+					text-align: center;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<div class="all_1">
-			<div class="topbar">
-				<div class="topbar_left">
-					<img src="img/download-4.png" alt="" />
-				</div>
-				<div class="topbar_right">
-					<div class="phone"></div>
-					<span>口袋精英</span>
-					<span>精英考勤</span>
-					<span>精英吧</span>
-				</div>
-			</div>
-		</div>
-		<div class="all_2">
-			<div class="body">
-				<div class="body_1">
-					<div class="box1">
-						<span>账户登录</span>
-						<div class="load"></div>
-					</div>
-					<div class="box2">
-						<div class="box2-1">
-							<div class="box2_p1"></div>
-							<input type="text" /><br />
-						</div>
-						<div class="box2-2">
-							<div class="box2_p2"></div>
-							<input type="password"/>
-						</div>
-						<input type="radio" /> <span>记住我</span>
-						<span class="a">记住密码</span>
-					</div>
-					<div class="box3">
-						<button><span class="b">登录</span></button>
-						<button><span class="c">注册</span></button>
-					</div>
+		<div class="topVideo">
+			<video src="https://production.cdmycdn.com/assets/marketing-pages/intensives/bws/coding-scenes-9a2031e8142b40bdb5d936d5eef33dfa.mp4" loop autoplay></video>
+			<div class="videoBac">
+				<div class="topContent">
+					<h1>Welcome Everyone</h1>
+					<p class="topContent-top">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id temporibus perferendis necessitatibus numquam amet impedit explicabo? Debitis quasi ullam aperiam!
+					</p>
+					<p class="btn">Find Out More</p>
 				</div>
 			</div>
 		</div>
-		<div class="all_3">
-			<span>才信教育©2015-2017</span>
-			<span>|</span>
-			<a href="">京ICP备16013954号</a>
+		<div class="content">
+			<div class="section">
+				<p class="section-top">
+					Section A
+				</p>
+				<p class="section-bottom">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!
+				</p>
+			</div>
+			<div class="section sectionB">
+				<p class="section-top">
+					Section B
+				</p>
+				<p class="section-bottom">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!
+				</p>
+			</div>
 		</div>
 	</body>
 </html>
