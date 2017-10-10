@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>弹弹弹</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<div class="all">
+			<div class="topBut">
+				<button class="btn">弹弹弹</button>
+			</div>
+			<div class="content">
+				<div class="top">
+					<h2>弹窗顶部</h2>
+					<span class="close">X</span>
+				</div>
+				<div class="med">
+					<p>这是一个弹窗效果</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, blanditiis, quos corrupti voluptate minus vero alias, atque velit et aspernatur, ratione distinctio. Corporis, ex perferendis. Nisi, doloribus. Quis, harum.</p>
+				</div>
+				<div class="bot">
+					<h3>弹窗底部</h3>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var close=document.querySelector(".close");
+		var btn=document.querySelector(".btn");
+		var content=document.querySelector(".content");
+		var all=document.querySelector(".all");
+		console.log(all)
+		btn.onclick=function(ev){
+			var e=ev||window.event;
+				if (e.stoppropagrtion) {
+					e.stoppropagrtion();
+				}
+				else{
+					e.cancelBubble=true;
+				}
+			content.style.display="block";
+			all.style.background="rgba(0,0,0,0.5)";
+		}
+		close.onclick=function(){
+			content.style.display="none";
+			all.style.background="";
+		}
+		content.onclick=function(ev){
+			var e=ev||window.event;
+				if (e.stoppropagrtion) {
+					e.stoppropagrtion();
+				}
+				else{
+					e.cancelBubble=true;
+				}
+		}
+		all.onclick=function(ev){
+			content.style.display="none";
+			all.style.background="";
+		}
+	</script>
+</html>
